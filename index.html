@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sort Visualizer</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet"  href="styles/styles.css">
+</head>
+
+<body>
+    <div class="main_wrapper">
+        <header>
+            <nav> 
+                <div class="go-stop">
+                    <button id="stop">Randomize Bars</button>
+                    <div class="displayAlgoName">
+                        <p>Selected Algorithm:</p>
+                        <h4 id="showSelectedAlgo">No Algorithm selected</h4>
+                    </div>
+                </div>  
+                <div class="select-box">
+                        <div class="option">
+                            <input type="radio" class="radio" id="bubble" name="category" checked />
+                            <label for="bubble">Bubble Sort</label>
+                        </div>
+                         <div class="option">
+                            <input type="radio" class="radio" id="heap" name="category" />
+                            <label for="heap">Heap Sort</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="insertion" name="category" />
+                            <label for="insertion">Insertion Sort</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="merge" name="category" />
+                            <label for="merge">Merge Sort</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="quick" name="category" />
+                            <label for="quick">Quick Sort</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="selection" name="category" />
+                            <label for="selection">Selection Sort</label>
+                        </div>
+                    
+                </div>
+                
+                <div class="array-inputs"> 
+                    <p>Size</p >
+                    <input class="slider" id="size" type="range" min=10 max=150 step=1 value=85>
+                    <p>Speed</p>
+                    <input class="slider" id="speed" type="range" min=1 max=5 step=1 value=3>
+                    <div class="go-stop">
+                        <button id="go">Start</button>
+                    </div> 
+                </div>
+               
+            </nav>  
+        </header>
+        <section>
+            <div id="array_container">
+            </div>
+        </section>
+    </div>
+
+  
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
